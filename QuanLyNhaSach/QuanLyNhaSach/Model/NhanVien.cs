@@ -19,7 +19,7 @@ namespace QuanLyNhaSach.Model
         public String DiaChi { get; set; }
         [Required, StringLength(50), Display(Name = "Chức vụ")]
         public String ChucVu { get; set; }
-        [Required, StringLength(50), Display(Name = "Tình trạng")]
+        [Required, Display(Name = "Tình trạng")]
         public Boolean TinhTrang { get; set; }
     }
 }
