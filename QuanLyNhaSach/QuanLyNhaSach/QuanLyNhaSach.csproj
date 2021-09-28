@@ -57,10 +57,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDBContext.cs" />
+    <Compile Include="BUS\BUS_HoaDon.cs" />
     <Compile Include="BUS\BUS_NhanVien.cs" />
     <Compile Include="BUS\BUS_Sach.cs" />
+    <Compile Include="DAO\DAO_ChiTietHoaDon.cs" />
+    <Compile Include="DAO\DAO_HoaDon.cs" />
     <Compile Include="DAO\DAO_NhanVien.cs" />
     <Compile Include="DAO\DAO_Sach.cs" />
+    <Compile Include="FChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FChiTietHoaDon.Designer.cs">
+      <DependentUpon>FChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHoaDon.Designer.cs">
+      <DependentUpon>FHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109201608372_updateBangHoaDon.cs" />
+    <Compile Include="Migrations\202109220709249_ThemDL.cs" />
+    <Compile Include="Model\ChiTietHoaDon.cs" />
     <Compile Include="QuanLyNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +123,9 @@
     <Compile Include="QuanLySach.Designer.cs">
       <DependentUpon>QuanLySach.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FHoaDon.resx">
+      <DependentUpon>FHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109271212406_TaoBang.resx">
       <DependentUpon>202109271212406_TaoBang.cs</DependentUpon>
     </EmbeddedResource>

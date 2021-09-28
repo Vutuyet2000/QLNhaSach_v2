@@ -15,6 +15,17 @@ namespace QuanLyNhaSach
         public DbSet<NhanVien> NhanVien { get; set;}
         public DbSet<KhachHang> KhachHang { get; set; }
         public DbSet<HoaDon> HoaDon { get; set; }
+        public DbSet<ChiTietHoaDon> ChiTietHoaDon { get; set; }
         public DbSet<Sach> Sach { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ChiTietHoaDon>().HasRequired(a => a.Hd).WithMany().WillCascadeOnDelete(false);
+            modelBuilder.Entity<ChiTietHoaDon>().HasRequired(a => a.s).WithMany().WillCascadeOnDelete(false);
+            modelBuilder.Entity<HoaDon>().HasRequired(a => a.Kh).WithMany().WillCascadeOnDelete(false);
+            modelBuilder.Entity<HoaDon>().HasRequired(a => a.nv).WithMany().WillCascadeOnDelete(false);
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
