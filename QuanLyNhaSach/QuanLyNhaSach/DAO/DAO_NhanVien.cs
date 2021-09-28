@@ -52,13 +52,13 @@ namespace QuanLyNhaSach.DAO
         }
 
         //Danh cho chuc nang Vo hieu hoa nhan vien (xoa)
-        public void CapNhatTinhTrangNV(int NVId, bool tinhTrang)
-        {
-            var NVDaTao = db.NhanVien.First(n => n.NhanVienId == NVId);
-            NVDaTao.TinhTrang = tinhTrang;
+        //public void CapNhatTinhTrangNV(int NVId, bool tinhTrang)
+        //{
+        //    var NVDaTao = db.NhanVien.First(n => n.NhanVienId == NVId);
+        //    NVDaTao.TinhTrang = tinhTrang;
 
-            db.SaveChanges();
-        }
+        //    db.SaveChanges();
+        //}
 
         //lay dannh sach chuc vu
         public dynamic LayDSChucVu()

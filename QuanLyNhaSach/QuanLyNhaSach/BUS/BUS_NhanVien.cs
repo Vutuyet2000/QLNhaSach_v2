@@ -61,18 +61,18 @@ namespace QuanLyNhaSach.BUS
         }
 
         //active/inacctive nhan vien
-        public bool SuaTinhTrangNV(int id, bool tinhTrang)
-        {
-            try
-            {
-                dNV.CapNhatTinhTrangNV(id, tinhTrang);
-                return true;
-            }
-            catch (Exception e)
-            {
-                return false;
-            }
-        }
+        //public bool SuaTinhTrangNV(int id, bool tinhTrang)
+        //{
+        //    try
+        //    {
+        //        dNV.CapNhatTinhTrangNV(id, tinhTrang);
+        //        return true;
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        return false;
+        //    }
+        //}
 
         //them nhan vien
         public bool themNhanVien(NhanVien nv)
