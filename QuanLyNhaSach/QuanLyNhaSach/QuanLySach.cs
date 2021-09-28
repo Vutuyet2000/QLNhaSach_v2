@@ -17,12 +17,14 @@ namespace QuanLyNhaSach
         BUS_Sach bSach;
         public QuanLySach()
         {
+
             InitializeComponent();
             bSach = new BUS_Sach();
         }
 
         private void QuanLySach_Load(object sender, EventArgs e)
         {
+            txtMaSach.Enabled = false;
             bSach.HienThiDSNVLenCb(cbNV);
             HienThiDSSachLenDG();
         }

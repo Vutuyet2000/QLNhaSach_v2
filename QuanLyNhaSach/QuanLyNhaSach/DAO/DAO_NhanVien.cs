@@ -27,6 +27,7 @@ namespace QuanLyNhaSach.DAO
                 nv.DiaChi,
                 nv.ChucVu,
                 nv.TinhTrang
+                
             }).ToList();
         }
 

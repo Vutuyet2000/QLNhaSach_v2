@@ -10,19 +10,11 @@ namespace QuanLyNhaSach.DAO
     class DAO_Sach
     {
         ApplicationDBContext db;
+
         public DAO_Sach()
         {
             db = new ApplicationDBContext();
-        }
-        public dynamic LayDSNV()
-        {
-            var ds = db.NhanVien.Select(s => new
-            {
-                s.NhanVienId,
-                s.HoTenNV
-            }).ToList();
-
-            return ds;
+            
         }
         public void ThemSach(Sach s)
         {

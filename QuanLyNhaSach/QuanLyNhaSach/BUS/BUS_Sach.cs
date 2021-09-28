@@ -13,13 +13,15 @@ namespace QuanLyNhaSach.BUS
     class BUS_Sach
     {
         DAO_Sach dSach;
+        DAO_NhanVien dNV;
         public BUS_Sach()
         {
             dSach = new DAO_Sach();
+            dNV = new DAO_NhanVien();
         }
         public void HienThiDSNVLenCb(ComboBox cb)
         {
-            cb.DataSource = dSach.LayDSNV();
+            cb.DataSource = dNV.LayDSNhanVien();
             cb.DisplayMember = "HoTenNV";
             cb.ValueMember = "NhanVienId";
         }

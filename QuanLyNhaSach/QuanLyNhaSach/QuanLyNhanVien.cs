@@ -26,12 +26,13 @@ namespace QuanLyNhaSach
             bNV.HienThiDSNhanVien(dGNV);
             bNV.HienThiDSChucVu(cbChucVu);
             bNV.HienThiDSTinhTrang(cbTinhTrang);
-            dGNV.Columns[0].Width = (int)(dGNV.Width * 0.12);
-            dGNV.Columns[1].Width = (int)(dGNV.Width * 0.15);
-            dGNV.Columns[2].Width = (int)(dGNV.Width * 0.15);
-            dGNV.Columns[3].Width = (int)(dGNV.Width * 0.22);
-            dGNV.Columns[4].Width = (int)(dGNV.Width * 0.15);
-            dGNV.Columns[5].Width = (int)(dGNV.Width * 0.15);
+            dGNV.Columns[0].Width = (int)(dGNV.Width * 0.2);
+            dGNV.Columns[1].Width = (int)(dGNV.Width * 0.25);
+            dGNV.Columns[2].Width = (int)(dGNV.Width * 0.25);
+            dGNV.Columns[3].Width = (int)(dGNV.Width * 0.30);
+            dGNV.Columns[4].Width = (int)(dGNV.Width * 0.25);
+            dGNV.Columns[5].Width = (int)(dGNV.Width * 0.25);
+
         }
 
         private void QuanLyNhanVien_Load(object sender, EventArgs e)
