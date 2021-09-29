@@ -16,8 +16,7 @@
                         password = c.String(maxLength: 50),
                     })
                 .PrimaryKey(t => t.username);
-            
-            
+                
         }
         
         public override void Down()

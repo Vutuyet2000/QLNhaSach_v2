@@ -44,54 +44,82 @@ namespace QuanLyNhaSach
         private void btThem_Click(object sender, EventArgs e)
         {
             Sach s = new Sach();
-            s.TenSach = txtTenSach.Text;
-            s.TacGia = txtTacGia.Text;
-            s.TheLoai = txtTheLoai.Text;
-            s.Gia = int.Parse(txtGia.Text);
-            s.SoLuongTonKho = int.Parse(txtSoLuong.Text);
-            s.NhanVienId = int.Parse(cbNV.SelectedValue.ToString());
-            bSach.TaoSach(s);
-            HienThiDSSachLenDG();
-            txtTenSach.Text = txtTacGia.Text = txtTheLoai.Text = txtGia.Text = txtSoLuong.Text = "";
-            cbNV.SelectedIndex = 0;
+            if (txtSoLuong.Text == "" || txtTenSach.Text == "" || txtTacGia.Text == "" || txtTheLoai.Text == ""
+                || txtGia.Text == "")
+            {
+                MessageBox.Show("Thêm thất bại");
+
+            }
+            else
+            {
+                s.TenSach = txtTenSach.Text;
+                s.TacGia = txtTacGia.Text;
+                s.TheLoai = txtTheLoai.Text;
+                s.Gia = Convert.ToDecimal(txtGia.Text);
+                s.SoLuongTonKho = int.Parse(txtSoLuong.Text);
+                s.NhanVienId = int.Parse(cbNV.SelectedValue.ToString());
+
+
+                if (bSach.TaoSach(s))
+                {
+                    MessageBox.Show("Thêm thành công");
+                    HienThiDSSachLenDG();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thất bại");
+                }
+
+                txtTenSach.Text = txtTacGia.Text = txtTheLoai.Text = txtGia.Text = txtSoLuong.Text = "";
+                cbNV.SelectedIndex = 0;
+            }
         }
 
         private void btXoa_Click(object sender, EventArgs e)
         {
             Sach sachXoa = new Sach();
-            sachXoa.SachId = int.Parse(txtMaSach.Text);
 
-
-            if (bSach.XoaSach(sachXoa))
-            {
-                MessageBox.Show("Xóa đơn hàng thành công");
-                bSach.HienThiDSSachLenDG(dGSach);
-            }
-            else
-            {
-                MessageBox.Show("Xóa đơn hàng thất bại");
-            }
+                sachXoa.SachId = int.Parse(txtMaSach.Text);
+                if (bSach.XoaSach(sachXoa))
+                {
+                    MessageBox.Show("Xóa sách thành công");
+                    bSach.HienThiDSSachLenDG(dGSach);
+                }
+                else
+                {
+                    MessageBox.Show("Xóa sách thất bại");
+                }
+           
 
         }
 
         private void btSua_Click(object sender, EventArgs e)
         {
             Sach sachSua = new Sach();
-            sachSua.SachId = int.Parse(txtMaSach.Text);
-            sachSua.TenSach = txtTenSach.Text;
-            sachSua.TacGia = txtTacGia.Text;
-            sachSua.TheLoai = txtTheLoai.Text;
-            sachSua.Gia = Convert.ToDecimal(txtGia.Text);
-            sachSua.SoLuongTonKho = int.Parse(txtSoLuong.Text);
-            sachSua.NhanVienId = int.Parse(cbNV.SelectedValue.ToString());
-            if (bSach.SuaSach(sachSua))
+            if (txtSoLuong.Text == "" || txtTenSach.Text == "" || txtTacGia.Text == "" || txtTheLoai.Text == ""
+                || txtGia.Text == "")
             {
-                MessageBox.Show("Sửa sách thành công");
-                bSach.HienThiDSSachLenDG(dGSach);
+                MessageBox.Show("Sửa thất bại");
+
             }
             else
             {
-                MessageBox.Show("Sửa sách thất bại");
+                sachSua.SachId = int.Parse(txtMaSach.Text);
+                sachSua.TenSach = txtTenSach.Text;
+                sachSua.TacGia = txtTacGia.Text;
+                sachSua.TheLoai = txtTheLoai.Text;
+                sachSua.Gia = Convert.ToDecimal(txtGia.Text);
+                sachSua.SoLuongTonKho = int.Parse(txtSoLuong.Text);
+                sachSua.NhanVienId = int.Parse(cbNV.SelectedValue.ToString());
+                if (bSach.SuaSach(sachSua))
+                {
+                    MessageBox.Show("Sửa sách thành công");
+                    bSach.HienThiDSSachLenDG(dGSach);
+                }
+                else
+                {
+                    MessageBox.Show("Sửa sách thất bại");
+                }
             }
         }
 

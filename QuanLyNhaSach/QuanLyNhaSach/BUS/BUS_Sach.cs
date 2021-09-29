@@ -25,16 +25,17 @@ namespace QuanLyNhaSach.BUS
             cb.DisplayMember = "HoTenNV";
             cb.ValueMember = "NhanVienId";
         }
-        public void TaoSach(Sach s)
+        public bool TaoSach(Sach s)
         {
             try
             {
                 dSach.ThemSach(s);
-                MessageBox.Show("Thêm thành công");
+                return true;
             }
             catch (Exception)
             {
-                MessageBox.Show("Thêm thất bại");
+                return false;
+               
             }
 
         }
