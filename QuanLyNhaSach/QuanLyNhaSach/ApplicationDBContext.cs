@@ -17,6 +17,7 @@ namespace QuanLyNhaSach
         public DbSet<HoaDon> HoaDon { get; set; }
         public DbSet<ChiTietHoaDon> ChiTietHoaDon { get; set; }
         public DbSet<Sach> Sach { get; set; }
+        public DbSet<MatKhau> MatKhau { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

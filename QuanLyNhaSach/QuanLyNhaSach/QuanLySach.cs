@@ -32,13 +32,13 @@ namespace QuanLyNhaSach
         {
             dGSach.DataSource = null;
             bSach.HienThiDSSachLenDG(dGSach);
-            dGSach.Columns[0].Width = (int)(dGSach.Width * 0.2);
+            dGSach.Columns[0].Width = (int)(dGSach.Width * 0.1);
             dGSach.Columns[1].Width = (int)(dGSach.Width * 0.25);
-            dGSach.Columns[2].Width = (int)(dGSach.Width * 0.25);
-            dGSach.Columns[3].Width = (int)(dGSach.Width * 0.25);
-            dGSach.Columns[4].Width = (int)(dGSach.Width * 0.25);
-            dGSach.Columns[5].Width = (int)(dGSach.Width * 0.25);
-            dGSach.Columns[6].Width = (int)(dGSach.Width * 0.25);
+            dGSach.Columns[2].Width = (int)(dGSach.Width * 0.15);
+            dGSach.Columns[3].Width = (int)(dGSach.Width * 0.1);
+            dGSach.Columns[4].Width = (int)(dGSach.Width * 0.1);
+            dGSach.Columns[5].Width = (int)(dGSach.Width * 0.15);
+            dGSach.Columns[6].Width = (int)(dGSach.Width * 0.15);
         }
 
         private void btThem_Click(object sender, EventArgs e)

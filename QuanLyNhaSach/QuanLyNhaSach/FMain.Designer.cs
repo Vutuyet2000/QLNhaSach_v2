@@ -31,73 +31,51 @@ namespace QuanLyNhaSach
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.QuanLyNhanVien = new System.Windows.Forms.ToolStripMenuItem();
-            this.QuanLySach = new System.Windows.Forms.ToolStripMenuItem();
-            this.ThongKe = new System.Windows.Forms.ToolStripMenuItem();
-            this.dangXuat = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLýNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLýSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.QuanLyNhanVien,
-            this.QuanLySach,
-            this.ThongKe,
-            this.dangXuat});
+            this.quảnLýNhânViênToolStripMenuItem,
+            this.quảnLýSáchToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(13, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(878, 44);
+            this.menuStrip1.Size = new System.Drawing.Size(1200, 36);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
-            // QuanLyNhanVien
+            // quảnLýNhânViênToolStripMenuItem
             // 
-            this.QuanLyNhanVien.Name = "QuanLyNhanVien";
-            this.QuanLyNhanVien.Size = new System.Drawing.Size(238, 36);
-            this.QuanLyNhanVien.Text = "Quản lý nhân viên";
+            this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
+            this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(183, 30);
+            this.quảnLýNhânViênToolStripMenuItem.Text = "Quản Lý Nhân Viên ";
+            this.quảnLýNhânViênToolStripMenuItem.Click += new System.EventHandler(this.quảnLýNhânViênToolStripMenuItem_Click);
             // 
-            // QuanLySach
+            // quảnLýSáchToolStripMenuItem
             // 
-            this.QuanLySach.Name = "QuanLySach";
-            this.QuanLySach.Size = new System.Drawing.Size(176, 36);
-            this.QuanLySach.Text = "Quản lý sách";
-            // 
-            // ThongKe
-            // 
-            this.ThongKe.Name = "ThongKe";
-            this.ThongKe.Size = new System.Drawing.Size(261, 36);
-            this.ThongKe.Text = "Thống kê doanh thu";
-            // 
-            // dangXuat
-            // 
-            this.dangXuat.Name = "dangXuat";
-            this.dangXuat.Size = new System.Drawing.Size(149, 36);
-            this.dangXuat.Text = "Đăng xuất";
+            this.quảnLýSáchToolStripMenuItem.Name = "quảnLýSáchToolStripMenuItem";
+            this.quảnLýSáchToolStripMenuItem.Size = new System.Drawing.Size(134, 30);
+            this.quảnLýSáchToolStripMenuItem.Text = "Quản Lý Sách";
+            this.quảnLýSáchToolStripMenuItem.Click += new System.EventHandler(this.quảnLýSáchToolStripMenuItem_Click);
             // 
             // FMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Ivory;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(878, 444);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.MaximizeBox = false;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quản lý nhà sách";
+            this.Text = "Quản Lý Nhà Sách";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -108,9 +86,7 @@ namespace QuanLyNhaSach
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem QuanLyNhanVien;
-        private System.Windows.Forms.ToolStripMenuItem QuanLySach;
-        private System.Windows.Forms.ToolStripMenuItem ThongKe;
-        private System.Windows.Forms.ToolStripMenuItem dangXuat;
+        private System.Windows.Forms.ToolStripMenuItem quảnLýNhânViênToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quảnLýSáchToolStripMenuItem;
     }
 }

@@ -17,31 +17,20 @@ namespace QuanLyNhaSach
             InitializeComponent();
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (menuStrip1.Items[0].Selected)
-            {
-                QuanLyNhanVien f1 = new QuanLyNhanVien();
-                this.Hide();
-                f1.ShowDialog();
-                this.Show();
-            }
-            else if (menuStrip1.Items[1].Selected)
-            {
-                QuanLySach f2 = new QuanLySach();
-                this.Hide();
-                f2.ShowDialog();
-                this.Show();
-            }
-            else if (menuStrip1.Items[2].Selected)
-            {
-                FHoaDon f3 = new FHoaDon();
-                this.Hide();
-                f3.ShowDialog();
-                this.Show();
-            }
-            else if (menuStrip1.Items[3].Selected)
-                this.Close();
+            QuanLyNhanVien f1 = new QuanLyNhanVien();
+            f1.MdiParent = this;
+            f1.StartPosition = FormStartPosition.CenterScreen;
+            f1.Show();
+        }
+
+        private void quảnLýSáchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLySach f2 = new QuanLySach();
+            f2.MdiParent = this;
+            f2.StartPosition = FormStartPosition.CenterScreen;
+            f2.Show();
         }
     }
 }

@@ -239,6 +239,7 @@ namespace QuanLyNhaSach
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
@@ -380,6 +381,7 @@ namespace QuanLyNhaSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1146, 789);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -387,6 +389,7 @@ namespace QuanLyNhaSach
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "QuanLyNhanVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form Quản lý nhân viên";
             this.Load += new System.EventHandler(this.QuanLyNhanVien_Load);
             this.groupBox1.ResumeLayout(false);

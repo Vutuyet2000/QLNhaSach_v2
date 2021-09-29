@@ -58,10 +58,12 @@
   <ItemGroup>
     <Compile Include="ApplicationDBContext.cs" />
     <Compile Include="BUS\BUS_HoaDon.cs" />
+    <Compile Include="BUS\BUS_MatKhau.cs" />
     <Compile Include="BUS\BUS_NhanVien.cs" />
     <Compile Include="BUS\BUS_Sach.cs" />
     <Compile Include="DAO\DAO_ChiTietHoaDon.cs" />
     <Compile Include="DAO\DAO_HoaDon.cs" />
+    <Compile Include="DAO\DAO_MatKhau.cs" />
     <Compile Include="DAO\DAO_NhanVien.cs" />
     <Compile Include="DAO\DAO_Sach.cs" />
     <Compile Include="FChiTietHoaDon.cs">
@@ -69,6 +71,12 @@
     </Compile>
     <Compile Include="FChiTietHoaDon.Designer.cs">
       <DependentUpon>FChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDangNhap.Designer.cs">
+      <DependentUpon>FDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="FHoaDon.cs">
       <SubType>Form</SubType>
@@ -84,7 +92,16 @@
     </Compile>
     <Compile Include="Migrations\202109201608372_updateBangHoaDon.cs" />
     <Compile Include="Migrations\202109220709249_ThemDL.cs" />
+    <Compile Include="Migrations\202109291529576_TaoDangNhap.cs" />
+    <Compile Include="Migrations\202109291529576_TaoDangNhap.designer.cs">
+      <DependentUpon>202109291529576_TaoDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109291535083_ThemDLDangNhap.cs" />
+    <Compile Include="Migrations\202109291535083_ThemDLDangNhap.designer.cs">
+      <DependentUpon>202109291535083_ThemDLDangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\ChiTietHoaDon.cs" />
+    <Compile Include="Model\MatKhau.cs" />
     <Compile Include="QuanLyNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +146,9 @@
     <Compile Include="QuanLySach.Designer.cs">
       <DependentUpon>QuanLySach.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FDangNhap.resx">
+      <DependentUpon>FDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FHoaDon.resx">
       <DependentUpon>FHoaDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +169,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109271218553_ThemDLVaoSach.resx">
       <DependentUpon>202109271218553_ThemDLVaoSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109291529576_TaoDangNhap.resx">
+      <DependentUpon>202109291529576_TaoDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109291535083_ThemDLDangNhap.resx">
+      <DependentUpon>202109291535083_ThemDLDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

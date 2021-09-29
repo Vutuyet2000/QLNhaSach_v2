@@ -64,3 +64,6 @@ C:\Users\PC\Music\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSa
 C:\Users\PC\Music\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.exe
 C:\Users\PC\Music\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.pdb
 C:\Users\PC\Music\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.FMain.resources
+C:\Users\PC\Music\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.Migrations.TaoDangNhap.resources
+C:\Users\PC\Music\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.Migrations.ThemDLDangNhap.resources
+C:\Users\PC\Music\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.FDangNhap.resources
