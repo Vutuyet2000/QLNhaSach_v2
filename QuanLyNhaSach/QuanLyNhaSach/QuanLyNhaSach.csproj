@@ -87,6 +87,12 @@
     <Compile Include="FHoaDon.Designer.cs">
       <DependentUpon>FHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="FKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKhachHang.Designer.cs">
+      <DependentUpon>FKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202109201608372_updateBangHoaDon.cs" />
     <Compile Include="Migrations\202109220709249_ThemDL.cs" />
     <Compile Include="Migrations\202109280358477_update.cs" />

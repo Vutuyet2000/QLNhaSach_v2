@@ -62,7 +62,7 @@ namespace QuanLyNhaSach.BUS
             if(numSoLuong.Value==0 ||txtDonGia.Text.Equals(""))
                 MessageBox.Show("Vui lòng không bỏ trống đơn giá/ số lượng sản phẩm",
                    "Thông báo", MessageBoxButtons.OK);
-                bool kiemtra = false;
+                bool kiemtra = true;
                 foreach (DataRow item in dtSanPham.Rows)
                 {
                     if (item[0].ToString() == cbSP.SelectedValue.ToString())
@@ -75,7 +75,7 @@ namespace QuanLyNhaSach.BUS
                    
                 }
 
-                if (!kiemtra)
+                if (kiemtra)
                 {
                     // định nghĩa 1 dòng mới
                     DataRow dataRow = dtSanPham.NewRow();

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace QuanLyNhaSach.Dao
 {
@@ -17,13 +18,21 @@ namespace QuanLyNhaSach.Dao
 
         public dynamic LayDSKH()
         {
-            return db.KhachHang.Select(kh => new
+            try
             {
-                kh.KhachHangId,
-                kh.HoTenKH,
-                kh.Sdt,
-                kh.DiaChi,
-            }).ToList();
+                var ds = db.KhachHang.Select(kh => new
+                {
+                    kh.KhachHangId,
+                    kh.HoTenKH
+                }).ToList();
+                return ds;
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            return null;
         }
 
         public void ThemKhachHang(KhachHang kh)
@@ -32,35 +41,27 @@ namespace QuanLyNhaSach.Dao
             db.SaveChanges();
         }
 
-        public bool KiemTraKH(KhachHang kh)
-        {
-            KhachHang kH = db.KhachHang.Find(kh.KhachHangId);
-            if (kh != null)
-            {
-                return true;
-            }
-            else
-                return false;
-        }
-
 
         public void SuaTTKhachHang(KhachHang kh)
         {
-            KhachHang KH = db.KhachHang.Find(kh.KhachHangId);
-            KH.HoTenKH = kh.HoTenKH;
-            KH.DiaChi = kh.DiaChi;
-            KH.Sdt = kh.Sdt;
+            var KHDaTao = db.KhachHang.First(n => n.KhachHangId == kh.KhachHangId);
+
+            KHDaTao.HoTenKH = kh.HoTenKH;
+            KHDaTao.Sdt = kh.Sdt;
+            KHDaTao.DiaChi = kh.DiaChi;
+
             db.SaveChanges();
         }
 
-        public void XoaKH(KhachHang kh)
+        public void XoaTTKhachHang(KhachHang kh)
         {
-            KhachHang KH = db.KhachHang.Find(kh.KhachHangId);
-            db.KhachHang.Remove(KH);
+            var KHDaTao = db.KhachHang.First(n => n.KhachHangId == kh.KhachHangId);
+
+            db.KhachHang.Remove(KHDaTao);
             db.SaveChanges();
         }
 
-
+       
     }
 }
 

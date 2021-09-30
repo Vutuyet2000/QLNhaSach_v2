@@ -37,7 +37,7 @@ namespace QuanLyNhaSach
         private void btXoa_Click(object sender, EventArgs e)
         {
             int maDH = int.Parse(txtMaDH.Text);
-            int maSP = int.Parse(gVCTDH.CurrentRow.Cells["SachId"].Value.ToString());
+            int maSP = int.Parse(cbSP.SelectedValue.ToString());
             bChiTietHD.XoaCTDH(maDH, maSP);
             gVCTDH.Columns.Clear();
             bChiTietHD.LayDSCTDH(gVCTDH, ma);
@@ -67,8 +67,8 @@ namespace QuanLyNhaSach
                 txtMaDH.Text = gVCTDH.Rows[e.RowIndex].Cells["HoaDonId"].Value.ToString();
                 txtDonGia.Text = gVCTDH.Rows[e.RowIndex].Cells["DonGia"].Value.ToString();
                 txtSoLuong.Text = gVCTDH.Rows[e.RowIndex].Cells["SoLuong"].Value.ToString();
-
-                bSach.Lay1SP(cbSP, int.Parse(gVCTDH.Rows[e.RowIndex].Cells["SachId"].Value.ToString()));
+                cbSP.Text = gVCTDH.Rows[e.RowIndex].Cells["TenSach"].Value.ToString();
+                //bSach.Lay1SP(cbSP, int.Parse());
 
             }
         }

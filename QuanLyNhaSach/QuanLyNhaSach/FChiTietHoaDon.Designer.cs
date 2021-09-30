@@ -112,9 +112,9 @@ namespace QuanLyNhaSach
             this.label1.Location = new System.Drawing.Point(437, 46);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 25);
+            this.label1.Size = new System.Drawing.Size(193, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "CHI TIẾT ĐƠN HÀNG";
+            this.label1.Text = "CHI TIẾT HOÁ ĐƠN";
             // 
             // groupBox1
             // 
@@ -335,7 +335,7 @@ namespace QuanLyNhaSach
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1019, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1019, 30);
             this.menuStrip1.TabIndex = 15;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -351,7 +351,7 @@ namespace QuanLyNhaSach
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FChiTietHoaDon";
-            this.Text = "FOrderDetails";
+            this.Text = "FChiTietHoaDon";
             this.Activated += new System.EventHandler(this.FChiTietHoaDon_Activated);
             this.Load += new System.EventHandler(this.FChiTietHoaDon_Load);
             this.groupBox1.ResumeLayout(false);

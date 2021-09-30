@@ -25,7 +25,7 @@ namespace QuanLyNhaSach.Dao
                 var ds = db.ChiTietHoaDon.Where(s => s.HoaDonId == maDH).Select(s => new
                 {
                     s.HoaDonId,
-                    s.SachId,
+                    s.s.TenSach,
                     s.DonGia,
                     s.SoLuong,
                 }).ToList();

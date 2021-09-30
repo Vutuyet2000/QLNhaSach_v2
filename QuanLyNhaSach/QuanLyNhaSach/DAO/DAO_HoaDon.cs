@@ -21,8 +21,8 @@ namespace QuanLyNhaSach.Dao
         {
             return db.HoaDon.Select(hd => new
             {
-                hd.NhanVienId,
-                hd.KhachHangId,
+                hd.nv.HoTenNV,
+                hd.Kh.HoTenKH,
                 hd.NgayLapHoaDon,
                 hd.HoaDonId
             }).ToList();
@@ -31,7 +31,6 @@ namespace QuanLyNhaSach.Dao
         //them hoa don
         public bool ThemHoaDon(HoaDon nv)
         {
-
             db.HoaDon.Add(nv);
             return db.SaveChanges() > 0;
         }
@@ -40,7 +39,6 @@ namespace QuanLyNhaSach.Dao
         public bool SuaTTHoaDon(HoaDon hd)
         {
             var HDDaTao = db.HoaDon.First(n => n.HoaDonId == hd.HoaDonId);
-
             HDDaTao.NgayLapHoaDon = hd.NgayLapHoaDon;
             HDDaTao.NhanVienId = hd.NhanVienId;
             HDDaTao.KhachHangId = hd.KhachHangId;
@@ -60,14 +58,15 @@ namespace QuanLyNhaSach.Dao
 
 
                 //2. Tìm ds chi tiết đơn hàng muốn xoá
-                IEnumerable<ChiTietHoaDon> dsCT = db.ChiTietHoaDon
+                List<ChiTietHoaDon> dsCT = db.ChiTietHoaDon
                     .Where(ct => ct.HoaDonId == hoaDon.HoaDonId)
                     .Select(x => x).ToList();
 
                 //3.Xoá chi tiết đơn hàng của đơn hàng đó
                 if (dsCT != null)
                 {
-                    db.ChiTietHoaDon.Remove((ChiTietHoaDon)dsCT);
+                    dsCT.ForEach(s => db.ChiTietHoaDon.Remove(s));
+                  
                     db.SaveChanges();
                 }
 

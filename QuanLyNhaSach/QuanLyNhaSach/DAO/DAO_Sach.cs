@@ -107,6 +107,7 @@ namespace QuanLyNhaSach.DAO
             Sach s= db.Sach.Find(ma);
             return s.TenSach;
         }
+
     }
 
 }

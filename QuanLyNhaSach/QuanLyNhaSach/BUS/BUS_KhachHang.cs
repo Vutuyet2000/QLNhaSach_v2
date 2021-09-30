@@ -1,6 +1,11 @@
 ﻿using QuanLyNhaSach.Dao;
 using QuanLyNhaSach.Model;
 using System;
+using System.Data.Entity.Infrastructure;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QuanLyNhaSach.Bus
@@ -24,16 +29,16 @@ namespace QuanLyNhaSach.Bus
             dg.DataSource = dKH.LayDSKH();
         }
 
-        public void ThemKhachHang(KhachHang kh)
+        public bool ThemKhachHang(KhachHang kh)
         {
             try
             {
                 dKH.ThemKhachHang(kh);
-                MessageBox.Show("Thêm thành công!");
+                return true;
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                MessageBox.Show("Thêm thất bại!");
+                return false;
             }
         }
 
@@ -48,6 +53,19 @@ namespace QuanLyNhaSach.Bus
                 return false;
             }
             return true;
+        }
+
+        public bool XoaTTKhachHang(KhachHang kh)
+        {
+            try
+            {
+                dKH.XoaTTKhachHang(kh);
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
         }
 
     }
