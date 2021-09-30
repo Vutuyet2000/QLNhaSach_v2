@@ -58,7 +58,7 @@ namespace QuanLyNhaSach.DAO
         //    NVDaTao.TinhTrang = tinhTrang;
 
         //    db.SaveChanges();
-        //}
+        //} 
 
         //lay dannh sach chuc vu
         public dynamic LayDSChucVu()

@@ -19,7 +19,6 @@ C:\Users\PC\Music\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.Migrations
 C:\Users\PC\Music\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.Migrations.ThemDLVaoSach.resources
 C:\Users\PC\Music\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.QuanLyNhanVien.resources
 C:\Users\PC\Music\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.QuanLySach.resources
-E:\IT\Project\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.csproj.AssemblyReference.cache
 E:\IT\Project\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.Migrations.TaoBang.resources
 E:\IT\Project\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.Migrations.AddTinhTrangVaoColumn.resources
 E:\IT\Project\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.Migrations.ThemDLVaoBangNV.resources
@@ -41,3 +40,9 @@ E:\IT\Project\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\bin\Debug\EntityFramework
 E:\IT\Project\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.csproj.CopyComplete
 E:\IT\Project\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.exe
 E:\IT\Project\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.FHoaDon.resources
+E:\IT\Project\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.Migrations.update.resources
+E:\IT\Project\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.Migrations.ThemDLKhachHang.resources
+E:\IT\Project\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.csproj.AssemblyReference.cache
+E:\IT\Project\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.FChiTietHoaDon.resources
+E:\IT\Project\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.BUS.FDatSach.resources
+E:\IT\Project\QLNhaSach_v2\QuanLyNhaSach\QuanLyNhaSach\obj\Debug\QuanLyNhaSach.Migrations.AddTriggerSlgTonKho.resources

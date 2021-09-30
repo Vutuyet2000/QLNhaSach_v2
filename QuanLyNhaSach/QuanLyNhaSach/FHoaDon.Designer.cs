@@ -167,7 +167,6 @@ namespace QuanLyNhaSach
             // 
             // txtMaDH
             // 
-            this.txtMaDH.Enabled = false;
             this.txtMaDH.Location = new System.Drawing.Point(165, 55);
             this.txtMaDH.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaDH.Name = "txtMaDH";
@@ -207,6 +206,7 @@ namespace QuanLyNhaSach
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -284,6 +284,7 @@ namespace QuanLyNhaSach
             this.btThoat.TabIndex = 3;
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
+            this.btThoat.Click += new System.EventHandler(this.btThoat_Click_1);
             // 
             // btSua
             // 
@@ -294,6 +295,7 @@ namespace QuanLyNhaSach
             this.btSua.TabIndex = 2;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click_1);
             // 
             // btXoa
             // 
@@ -304,6 +306,7 @@ namespace QuanLyNhaSach
             this.btXoa.TabIndex = 1;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click_1);
             // 
             // btThem
             // 
@@ -338,6 +341,8 @@ namespace QuanLyNhaSach
             this.gVDH.RowTemplate.Height = 28;
             this.gVDH.Size = new System.Drawing.Size(867, 331);
             this.gVDH.TabIndex = 0;
+            this.gVDH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gVDH_CellClick_1);
+            this.gVDH.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gVDH_CellDoubleClick_1);
             // 
             // menuStrip1
             // 
@@ -393,6 +398,7 @@ namespace QuanLyNhaSach
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FHoaDon";
             this.Text = "Quản lý hoá đơn";
+            this.Load += new System.EventHandler(this.FHoaDon_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

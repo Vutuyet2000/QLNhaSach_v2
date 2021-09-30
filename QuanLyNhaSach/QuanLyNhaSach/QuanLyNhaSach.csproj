@@ -57,11 +57,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDBContext.cs" />
+    <Compile Include="BUS\BUS_ChiTietHD.cs" />
+    <Compile Include="BUS\BUS_DatSach.cs" />
     <Compile Include="BUS\BUS_HoaDon.cs" />
+    <Compile Include="BUS\BUS_KhachHang.cs" />
     <Compile Include="BUS\BUS_NhanVien.cs" />
     <Compile Include="BUS\BUS_Sach.cs" />
+    <Compile Include="DAO\DAO_DatSach.cs" />
+    <Compile Include="FDatSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDatSach.Designer.cs">
+      <DependentUpon>FDatSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAO\DAO_ChiTietHoaDon.cs" />
     <Compile Include="DAO\DAO_HoaDon.cs" />
+    <Compile Include="DAO\DAO_KhachHang.cs" />
     <Compile Include="DAO\DAO_NhanVien.cs" />
     <Compile Include="DAO\DAO_Sach.cs" />
     <Compile Include="FChiTietHoaDon.cs">
@@ -78,6 +89,18 @@
     </Compile>
     <Compile Include="Migrations\202109201608372_updateBangHoaDon.cs" />
     <Compile Include="Migrations\202109220709249_ThemDL.cs" />
+    <Compile Include="Migrations\202109280358477_update.cs" />
+    <Compile Include="Migrations\202109280358477_update.designer.cs">
+      <DependentUpon>202109280358477_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109280555298_ThemDLKhachHang.cs" />
+    <Compile Include="Migrations\202109280555298_ThemDLKhachHang.designer.cs">
+      <DependentUpon>202109280555298_ThemDLKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109290307133_AddTriggerSlgTonKho.cs" />
+    <Compile Include="Migrations\202109290307133_AddTriggerSlgTonKho.designer.cs">
+      <DependentUpon>202109290307133_AddTriggerSlgTonKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\ChiTietHoaDon.cs" />
     <Compile Include="QuanLyNhanVien.cs">
       <SubType>Form</SubType>
@@ -123,6 +146,12 @@
     <Compile Include="QuanLySach.Designer.cs">
       <DependentUpon>QuanLySach.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FChiTietHoaDon.resx">
+      <DependentUpon>FChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDatSach.resx">
+      <DependentUpon>FDatSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FHoaDon.resx">
       <DependentUpon>FHoaDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +169,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109271218553_ThemDLVaoSach.resx">
       <DependentUpon>202109271218553_ThemDLVaoSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109280358477_update.resx">
+      <DependentUpon>202109280358477_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109280555298_ThemDLKhachHang.resx">
+      <DependentUpon>202109280555298_ThemDLKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109290307133_AddTriggerSlgTonKho.resx">
+      <DependentUpon>202109290307133_AddTriggerSlgTonKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
